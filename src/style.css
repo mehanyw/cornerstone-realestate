@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    /* Fonts */
+    @font-face {
+        font-family: "OrpheusPro";
+        font-weight: normal;
+        font-style: normal;
+        src: url("/src/assets/fonts/OrpheusPro.otf") format("otf");
+    }
+    @font-face {
+        font-family: "OrpheusPro";
+        font-weight: medium;
+        font-style: normal;
+        src: url("/src/assets/fonts/OrpheusProMedium.otf") format("otf");
+    }
+    @font-face {
+        font-family: "OrpheusPro";
+        font-weight: bold;
+        font-style: normal;
+        src: url("/src/assets/fonts/OrpheusProBold.otf") format("otf");
+    }
+    @font-face {
+        font-family: "SFPro";
+        font-weight: normal;
+        font-style: normal;
+        src: url("/src/assets/fonts/SFProRegular.otf") format("otf");
+    }
+
+    /* Text basics */
+    h1, h2, h3, h4, h5 {
+        font-family: OrpheusPro, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    }
+    h1 {
+        font-weight: bold;
+    }
+    h2, h3 {
+        font-weight: medium;
+    }
+    h4, h5 {
+        font-weight: normal;
+    }
+    p {
+        font-family: SFPro, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-weight: normal;
+    }
+    li {
+        font-family: OrpheusPro, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+        font-weight: normal;
+    }
+}
